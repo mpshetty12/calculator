@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Calculator</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="calci.css">
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+      <script src="calci.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card" style="width: 18rem;">
+                <h3>Calculator</h3>
+                <div id="box">
+                    <h4><span id="transcripts">0000000000000000000 </span> <span id="operator">C</span></h4>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <button class="btn btn-primary" id="one" onclick="one()">1</button>
+                    <button class="btn btn-primary" id="two" onclick="two()">2</button>
+                    <button class="btn btn-primary" id="three" onclick="three()">3</button>
+                    <button class="btn btn-danger" id="C" onclick="cancel()">C</button>
+                    <button class="btn btn-info" id="mul" onclick="MUL()">X</button>
+                    <br/>
+                    <br/>
+                 
+                    <button class="btn btn-primary" id="four" onclick="four()">4</button>
+                    <button class="btn btn-primary" id="five" onclick="five()">5</button>
+                    <button class="btn btn-primary" id="six" onclick="six()">6</button>
+                    <button class="btn btn-info" id="add" onclick="ADD()">+</button>
+                    <button class="btn btn-info" id="sub" onclick="SUB()">-</button>
+                    <br/>
+                    <br/>
+            
+                    <button class="btn btn-primary" id="seven" onclick="seven()">7</button>
+                    <button class="btn btn-primary" id="eight" onclick="eight()">8</button>
+                    <button class="btn btn-primary" id="nine" onclick="nine()">9</button>
+                    <button class="btn btn-primary" id="zero" onclick="zero()">0</button>
+                    <button class="btn btn-success" id="equal" onclick="ANS()">=</button>
+                    <button class="btn btn-info" id="div" onclick="DIV()">/</button>
+                    <br/>
+                    <br/>
+                    <button class="btn btn-info" id="back" onclick="BACK()">BACK</button>
+                  </p>
+                </div>
+              </div>
+        </div>
+
+    </body>
+</html>
